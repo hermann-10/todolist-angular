@@ -1,0 +1,19 @@
+
+<!-- <p *ngIf="!todo">{{ error }}</p> -->
+<!-- <a class="btn btn-primary" [routerLink]="['/todos']">Retour</a> --> <!-- Le "/" sert à dire qu'on veut retourner depuis la racine -->
+
+<div class="card" style="width: 18rem;">
+<!-- <div *ngIf="todo" class="card" style="width: 18rem;">-->
+  <img class="card-img-top" [src]="todo.image" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ todo.todoName }}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- <a class="btn btn-primary" href="todos">Retour</a>--> <!-- Question : avec href ça fonctionne mais pas avec routerLink pourquoi ? -->
+
+    <button class="btn btn-primary" (click)="goBack()">Retour</button>
+
+  </div>
+
+
+</div>
+
